@@ -1,0 +1,67 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+.env
+.env.local
+
+# Ignore IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Ignore sensitive files
+*.key
+*.pem
+*.p12
+secrets.json
+credentials.json
+.credentials/
+auth_token.txt
+
+# Ignore sensitive sample data
+sample_data/payroll_real.xlsx
+sample_data/customer_list.csv
+sample_data/*_confidential.*
+
+# Ignore node modules (if using JS tools)
+node_modules/
+package-lock.json
+
+# Ignore Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Ignore temp files
+*.tmp
+*.bak
+*.swp
+.~lock.*#
+
+# Ignore API keys and tokens (if stored locally)
+.env
+.env.*.local
+
+# Ignore large binary files (keep PDFs tracked for samples, but not large exports)
+*.mp4
+*.mov
+*.zip
+
+# Ignore local QB exports (keep templates, not user data)
+*_export_*
+*_backup_*
+QBExport/
+
+# Keep these (don't ignore)
+!templates/
+!docs/
+!examples/
+!skills/
+!/README.md
+!/CLAUDE.md
